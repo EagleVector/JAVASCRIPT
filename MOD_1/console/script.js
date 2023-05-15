@@ -1,3 +1,10 @@
+// This is a single line comment.
+
+/* A
+multi line comment
+in JS.
+*/
+
 console.log(100);
 
 console.log("Hello world!");
@@ -25,3 +32,5 @@ console.groupEnd();
 const styles = 'padding: 10px; background-color: black; color: white;';
 
 console.log("%cHello World!", styles);
+
+
