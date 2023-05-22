@@ -88,3 +88,66 @@ function calculator(num1, num2, operator) {
 }
 
 console.log(calculator(4, 3, '*'));
+
+// Truthy and Falsy Values in JS
+
+const email = '';
+if(email) {
+  console.log('You passed the test');
+}
+
+// Falsy values in JS:
+// null
+// undefined
+// "" or ''
+// 0
+// NaN
+// false
+
+// Rest all of them are truthy
+// Truthy 
+// true
+// '0'
+// empty objects
+// []
+// {}
+// function () {}
+
+// Truthy and falsy caveats
+
+const children = 0;
+
+if (!isNaN(children)) {
+  console.log(`You have ${children} children`);
+} else {
+  console.log('Please enter the number of children you have');
+}
+
+// Checking for empty arrays
+const posts = [];
+
+if (posts.length > 0) {
+  console.log('List Posts');
+}
+else {
+  console.log('No post to list');
+}
+
+// Checking for empty objects
+const user = {};
+
+if (Object.keys(user).length > 0) {
+  console.log('List User');
+} else {
+  console.log('No User');
+}
+
+// Loose Equality (==)
+console.log(false == 0);
+console.log('' == 0);
+console.log(null == undefined);
+
+// Strict Equality (===)
+console.log(false === 0);
+console.log('' === 0);
+console.log(null === undefined);
