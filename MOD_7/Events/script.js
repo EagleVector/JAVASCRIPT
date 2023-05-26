@@ -129,38 +129,101 @@
 // const logo = document.querySelector('img');
 
 // function onClick(e) {
-  // target
-  // console.log(e.target);
-  // e.target.style.backgroundColor = 'black';
+//   // target
+//   console.log(e.target);
+//   e.target.style.backgroundColor = 'black';
 
-  // type -> type of event
-  // console.log(e.type);
+//   // type -> type of event
+//   console.log(e.type);
 
-  // timeStamp
-  // console.log(e.timeStamp);
+//   // timeStamp
+//   console.log(e.timeStamp);
 
-  // clientX & clientY -> relative posn of click wrt window
-  // console.log(e.clientX);
-  // console.log(e.clientY);
+//   // clientX & clientY -> relative posn of click wrt window
+//   console.log(e.clientX);
+//   console.log(e.clientY);
 
-  // offsetX & offsetY -> relative posn of click wrt element
-  // console.log(e.offsetX);
-  // console.log(e.offsetY);
+//   // offsetX & offsetY -> relative posn of click wrt element
+//   console.log(e.offsetX);
+//   console.log(e.offsetY);
 
-  // pageX & pageY -> relative posn of click wrt page
-  // console.log(e.pageX);
-  // console.log(e.pageY);
+//   // pageX & pageY -> relative posn of click wrt page
+//   console.log(e.pageX);
+//   console.log(e.pageY);
 
-  // screenX & screenY -> relative posn of click wrt screen
-  // console.log(e.screenX);
-  // console.log(e.screenY);
+//   // screenX & screenY -> relative posn of click wrt screen
+//   console.log(e.screenX);
+//   console.log(e.screenY);
+// }
+
+// function onDrag(e) {
+//   document.querySelector('h1').textContent = `X ${e.clientX} Y ${e.clientY}`;
 // }
 
 // logo.addEventListener('click', onClick);
-
+// logo.addEventListener('drag', onDrag);
 // logo.addEventListener('click', function (e) {
 //   console.log(e);
 // })
 
-// preventDefault()
+// // preventDefault()
+// // Forbodding the actions
 
+// document.querySelector('a').addEventListener('click', 
+// function (e) {
+//   e.preventDefault();
+
+//   console.log('Link was clicked');
+// });
+
+// KeyBoard events and Key Props
+
+// const itemInput = document.getElementById('item-input');
+
+// const onKeyPress = (e) => {
+//   console.log('keypress');
+// };
+
+// const onKeyUp = (e) => {
+//   console.log('keyup');
+// };
+
+// const onKeyDown = (e) => {
+//   console.log('keydown');
+// };
+
+// const onKeyDown = (e) => {
+  // key
+  // console.log(e.key);
+  // document.querySelector('h1').innerText = e.key;
+
+  // if (e.key === 'Enter') {
+  //   alert('Are you sure want to submit the form?')
+  // }
+
+  // keycode
+  // if (e.keyCode === 13) {
+  //   alert('Are you sure want to submit the form?')
+  // };
+
+  // Code
+  // if (e.code === 'Digit1') {
+  //   console.log('You pressed 1');
+  // }
+
+//   if (e.repeat) {
+//     console.log('You are holding down' + e.key);
+//   }
+
+//   console.log('Shift: ' + e.shiftKey);
+//   console.log('Shift: ' + e.ctrlKey);
+//   console.log('Alt: ' + e.altKey);
+
+//   if (e.shiftKey && e.key === 'K') {
+//     console.log('You hit shift + K');
+//   }
+// };
+
+// itemInput.addEventListener('keypress', onKeyPress);
+// itemInput.addEventListener('keyup', onKeyUp);
+// itemInput.addEventListener('keydown', onKeyDown);
