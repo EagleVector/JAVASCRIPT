@@ -24,26 +24,26 @@
 
 // Disney + Hotstar.
 
-let isPremiumMember = true;
-let isDiscoveryMember = false;
-let isAccornMember = false;
+// let isPremiumMember = true;
+// let isDiscoveryMember = false;
+// let isAccornMember = false;
 
-if (isPremiumMember) {
-  if (isDiscoveryMember) {
-    if (isAccornMember) {
-      console.log("You have an access to Hotstar + Accorn + Discovery content");
-    }
-    else {
-      console.log("You have access to Hotstar + Discovery content");
-    }
-  }
-  else {
-    console.log("You have access to Hotstar content only");
-  }
-}
-else {
-  console.log("Please buy a membership");
-}
+// if (isPremiumMember) {
+//   if (isDiscoveryMember) {
+//     if (isAccornMember) {
+//       console.log("You have an access to Hotstar + Accorn + Discovery content");
+//     }
+//     else {
+//       console.log("You have access to Hotstar + Discovery content");
+//     }
+//   }
+//   else {
+//     console.log("You have access to Hotstar content only");
+//   }
+// }
+// else {
+//   console.log("Please buy a membership");
+// }
 
 /* Q. WAP number n divisible by the number m?
 Q. WAP to find out if number n is a multiple of number m.
