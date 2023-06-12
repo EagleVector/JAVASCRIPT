@@ -214,3 +214,64 @@
 // }
 
 // console.log(rev);
+
+// ----------------------------------------------------------------------------------
+
+// Q. WAP to check prime number or not for a given input 
+// Example
+// Input1 - 23 
+// Output - True
+// Input2 - 21 
+// Output - False
+
+// Q. WAP to display all possible prime numbers from 1 to 500.
+
+// Q. WAP to check if any number exists in an array or not without using indexOf().
+// Example
+// Input - [1,2,3,4,5] , 3
+// Output - true
+
+// Q. WAF takes an array and number as an argument and it should return the index of that number. If the number is not Found then return -1. (Similar indexOf())
+// Example
+// Input - [1,2,3,4,5], 4
+// Output - 3
+// Input - [1,2,3,4,5], 7
+// Output -1
+
+// Q. WAP to reverse the array.
+// Example
+// Input - [1,2,3,4,5]
+// Output - [5,4,3,2,1]
+
+// Q. WAP to filter out all negative numbers from the array of numbers
+// Example
+// Input - [2,-9,-4,7,1,3]
+// Output - [2,7,1,3]
+
+
+// Q. WAP to return the sorted number of arrays in ascending order.
+// Example
+// Input - [4,3,1,5,2]
+// Output - [1,2,3,4,5]
+
+// Q. WAP to return the sorted number of arrays in descending order.
+// Example
+// Input - [4,3,1,5,2]
+// Output - [5,4,3,2,1]
+
+// Q. WAP to find the second smallest number?
+// Example
+// Input - [1,2,3,4,5]
+// Output - 2
+
+// Q. WAP to find the second largest number?
+// Example
+// Input - [1,2,3,4,5]
+// Output - 4
+
+// Q. WAP to check each element of an array is unique
+// Example
+// Input - [1,2,3,4,5]
+// Output- true
+// Input - [1,2,3,4,5,1]
+// Output - false
