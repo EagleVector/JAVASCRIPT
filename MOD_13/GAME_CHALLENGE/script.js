@@ -5,17 +5,19 @@ const Player = function (name) {
 }
 
 Player.prototype.gainXp = function(point) {
-  this.points += point;
-  if (this.points >= 10) {
-    this.lvl += 1;
-    this.points -= 10;
-  };
+  if (point <= 10 && point >= 1) {
+    this.points += point;
+    if (this.points >= 10) {
+      this.lvl += 1;
+      this.points -= 10;
+    };
+  } else {
+    return;
+  }
 }
 
 Player.prototype.describe = function() {
-  console.log(this.name);
-  console.log(this.points);
-  console.log(this.lvl);
+  return `Name: ${this.name} \n Level: ${this.lvl} \n Points: ${this.points}`;
 }
 let player1 = new Player('Bob');
 console.log(player1);
@@ -27,7 +29,7 @@ player2.gainXp(7);
 player1.gainXp(3);
 player2.gainXp(2);
 player1.gainXp(8);
-player2.gainXp(4);
+player2.gainXp(14);
 
-player1.describe();
-player2.describe();
+console.log(player1.describe());
+console.log(player2.describe());
