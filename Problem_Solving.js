@@ -1,3 +1,5 @@
+// ASSIGNMENT - 1
+
 // ODD OR EVEN
 
 // let x = 54;
@@ -216,6 +218,7 @@
 // console.log(rev);
 
 // ----------------------------------------------------------------------------------
+// ASSIGNMENT - 2
 
 // Q. WAP to check prime number or not for a given input 
 // Example
@@ -224,12 +227,58 @@
 // Input2 - 21 
 // Output - False
 
+// function isPrime(num) {
+//   let i = 2;
+//   while (i * i <= num) {
+//     if (num % i === 0) {
+//       return false;
+//     }
+//     i++;
+//   }
+//   return true;
+// }
+
+// console.log(isPrime(51));
+// console.log(isPrime(17));
+
 // Q. WAP to display all possible prime numbers from 1 to 500.
+
+// function rangePrime(start, end) {
+//   if (start < 2) {
+//     start = 2;
+//   }
+//   for (let i = start; i <= end; i++) {
+//     let j = 2;
+//     while (j * j <= i) {
+//       if (i % j === 0) {
+//         break;
+//       }
+//       j++;
+//     }
+//     if (j * j > i) {
+//       console.log(i);
+//     }
+//   }
+// }
+
+//   rangePrime(1, 100);
+
 
 // Q. WAP to check if any number exists in an array or not without using indexOf().
 // Example
 // Input - [1,2,3,4,5] , 3
 // Output - true
+
+// function checkNumber(arr, key) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === key) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(checkNumber([1, 2, 3, 4, 5], 10));
 
 // Q. WAF takes an array and number as an argument and it should return the index of that number. If the number is not Found then return -1. (Similar indexOf())
 // Example
@@ -238,36 +287,135 @@
 // Input - [1,2,3,4,5], 7
 // Output -1
 
+// function getIndex(arr, keyIndex) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === keyIndex) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(getIndex([1, 2, 3, 4, 5], 4));
+
 // Q. WAP to reverse the array.
 // Example
 // Input - [1,2,3,4,5]
 // Output - [5,4,3,2,1]
+
+// function reverseArray(arr) {
+//   let start = 0;
+//   let end = arr.length - 1;
+
+//   while (start < end) {
+//     let temp = arr[start];
+//     arr[start] = arr[end];
+//     arr[end] = temp;
+
+//     start++;
+//     end--;
+//   }
+//   return arr;
+// }
+
+// console.log(reverseArray([1, 2, 3, 4, 5]));
 
 // Q. WAP to filter out all negative numbers from the array of numbers
 // Example
 // Input - [2,-9,-4,7,1,3]
 // Output - [2,7,1,3]
 
+// function negativeFilter(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] < 0) {
+//       arr[i] = null;
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(negativeFilter([2, -9, -4, 7, 1, 3]));
 
 // Q. WAP to return the sorted number of arrays in ascending order.
 // Example
 // Input - [4,3,1,5,2]
 // Output - [1,2,3,4,5]
 
+// function ascendingSort(arr) {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] > arr[j]) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(ascendingSort([4, 3, 1, 5, 2]));
+
 // Q. WAP to return the sorted number of arrays in descending order.
 // Example
 // Input - [4,3,1,5,2]
 // Output - [5,4,3,2,1]
+
+// function descendingSort(arr) {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] < arr[j]) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(descendingSort([4, 3, 1, 5, 2]));
+
 
 // Q. WAP to find the second smallest number?
 // Example
 // Input - [1,2,3,4,5]
 // Output - 2
 
+// function ascendingSort2(arr) {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] > arr[j]) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   return arr[1];
+// }
+
+// console.log(ascendingSort2([4, 3, 1, 5, 2]));
+
 // Q. WAP to find the second largest number?
 // Example
 // Input - [1,2,3,4,5]
 // Output - 4
+
+// function descendingSort2(arr) {
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] < arr[j]) {
+//         let temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//       }
+//     }
+//   }
+//   return arr[1];
+// }
+
+// console.log(descendingSort2([4, 3, 1, 5, 2]));
 
 // Q. WAP to check each element of an array is unique
 // Example
@@ -275,3 +423,16 @@
 // Output- true
 // Input - [1,2,3,4,5,1]
 // Output - false
+
+// function uniqueElement(arr) {
+//   arr.sort();
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === arr[i + 1]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// console.log(uniqueElement([1, 2, 3, 4, 5, 2]));
