@@ -2,7 +2,7 @@
 
 function* createTeamIterator(teams) {
   for (let i = 0; i < teams.length; i++) {
-    yield teams[i]
+    yield teams[i];
   }
 }
 
@@ -31,3 +31,13 @@ console.log([...createTeamIterator(teams)]);
 const [first, second, third] = createTeamIterator(teams);
 
 console.log(first, second, third);
+
+// function* genNum() {
+//   for (let i = 0; i < 1000000; i++) {
+//     yield i;
+//   }
+// }
+
+// for (const num of genNum()) {
+//     console.log(num);
+//   }
