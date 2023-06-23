@@ -1,7 +1,7 @@
 {
-  "name": "mod_18",
+  "name": "js_unit_testing",
   "version": "1.0.0",
-  "description": "",
+  "description": "JS Unit Test",
   "main": "index.js",
   "scripts": {
     "test": "jest"
