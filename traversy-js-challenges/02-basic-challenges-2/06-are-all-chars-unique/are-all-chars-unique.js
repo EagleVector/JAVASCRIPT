@@ -1,3 +1,5 @@
-function areAllCharactersUnique() {}
+function areAllCharactersUnique() {
+  
+}
 
 module.exports = areAllCharactersUnique;
