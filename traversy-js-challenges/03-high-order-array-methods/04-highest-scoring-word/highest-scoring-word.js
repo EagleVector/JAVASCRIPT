@@ -1,35 +1,28 @@
 function highestScoringWord(str) {
-  if (!inputValidated(str)) {
-    return;
-  }
-  inputArr = str.split(' ');
+	if (!inputValidated(str)) {
+		return;
+	}
 
-  wordScore = [];
-  for (let i = 0; i < inputArr.length; i++) {
-    score = 0;
-    for (let j = 0; j < inputArr[i].length; j++) {
-      score = score + inputArr[i].charCodeAt(j);
-    }
-    wordScore.push(score);
-  }
+	const inputArr = str.split(' ');
 
-  return inputArr[maxScoreIndex(wordScore)];
+	// Use map to calculate scores for each word
+	const wordScore = inputArr
+  .map(word => word.split('')
+  .reduce((acc, char) => acc + mapLowerCaseToNumbers(char), 0)
+	);
+
+	const maxIndex = wordScore.indexOf(Math.max(...wordScore));
+
+	return inputArr[maxIndex];
 }
+
+function mapLowerCaseToNumbers(char) {
+	return char.charCodeAt(0) - 'a'.charCodeAt(0) + 1;
+}
+
 
 function inputValidated(str) {
-  return /[a-z ]/.test(str);
-}
-
-function maxScoreIndex(arr) {
-  let max = arr[0];
-  let maxIndex = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) {
-      max = arr[i];
-      maxIndex = i;
-    }
-  }
-  return maxIndex;
+	return /[a-z ]/.test(str);
 }
 
 module.exports = highestScoringWord;
