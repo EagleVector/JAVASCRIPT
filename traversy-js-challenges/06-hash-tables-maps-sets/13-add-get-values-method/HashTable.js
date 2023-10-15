@@ -82,6 +82,18 @@ class HashTable {
     return false;
   }
 
+  getValues() {
+    let values = [];
+    for (let i = 0; i < this.storage.length; i++) {
+      if (this.storage[i]) {
+        for (let j = 0; j < this.storage[i].length; j++) {
+          values.push(this.storage[i][j][1]);
+        }
+      }
+    }
+    return values;
+  }
+
   printTable() {
     for (let i = 0; i < this.storage.length; i++) {
       if (this.storage[i] !== undefined) {
