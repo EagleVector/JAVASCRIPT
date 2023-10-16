@@ -103,19 +103,8 @@ ht.set('james', '555-384-5523');
 ht.set('jack', '555-384-9933');
 ht.set('jill', '555-390-0034');
 ht.set('joe', '222-765-9870');
-ht.printTable();
-console.log(ht.get('jill'));
-console.log(ht.get('james'));
-console.log(ht.get('jack'));
-console.log(ht.get('joe'));
-console.log(ht.get('john'));
-console.log(ht.has('jill'));
 ht.remove('joe');
-ht.printTable();
-console.log(ht.getValues());
-console.log(ht.has('joe'));
 ht.clear();
-ht.printTable();
 
 
 
