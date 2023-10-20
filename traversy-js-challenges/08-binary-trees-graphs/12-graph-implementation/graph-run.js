@@ -13,4 +13,7 @@ g.addEdge('Tokyo', 'Dallas');
 g.addEdge('Dallas', 'Aspen');
 g.addEdge('Aspen', 'Tokyo');
 
-console.log(g);
+g.removeEdge('Dallas', 'Aspen');
+
+g.removeVertex('Aspen');
+
